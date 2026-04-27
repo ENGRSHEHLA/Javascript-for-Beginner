@@ -1,3 +1,39 @@
 body {
     background-color: lightblue;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.water-card {
+    max-width: 520px;
+    margin: 24px auto;
+    padding: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+}
+
+.water-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.water-image {
+    width: 240px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.water-active {
+    animation: wave 1.8s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0) scale(1); filter: saturate(1); }
+    25% { transform: translateX(-4px) scale(1.01); filter: saturate(1.15); }
+    50% { transform: translateX(4px) scale(1.02); filter: saturate(1.25); }
+    75% { transform: translateX(-3px) scale(1.01); filter: saturate(1.15); }
+    100% { transform: translateX(0) scale(1); filter: saturate(1); }
 }
