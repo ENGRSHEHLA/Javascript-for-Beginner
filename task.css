@@ -29,6 +29,14 @@ body {
 .water-active {
     animation: wave 1.8s ease-in-out infinite;
 }
+#startWaterBtn {
+    background-color: rgb(125, 169, 206);
+    color:black;
+}
+#stopWaterBtn{
+    background-color:aqua;
+    color: black;
+}
 
 @keyframes wave {
     0% { transform: translateX(0) scale(1); filter: saturate(1); }

@@ -34,6 +34,9 @@ if (colorPicker) {
 if (startWaterBtn && stopWaterBtn && waterImage && waterStatus) {
     startWaterBtn.addEventListener("click", () => {
         triedGifLoad = true;
+        // button color
+        startWaterBtn.style.backgroundColor ="pink";
+        startWaterBtn.style.color ="white";
         waterImage.classList.remove("water-active");
         waterImage.src = WATER_GIF_SRC;
         waterStatus.textContent = "Status: Playing GIF...";
@@ -41,6 +44,9 @@ if (startWaterBtn && stopWaterBtn && waterImage && waterStatus) {
 
     stopWaterBtn.addEventListener("click", () => {
         triedGifLoad = false;
+        // button color
+        stopWaterBtn.style.backgroundColor = "pink";
+        stopWaterBtn.style.color = "white";
         waterImage.src = WATER_STATIC_SRC;
         waterImage.classList.remove("water-active");
         waterStatus.textContent = "Status: Stopped";
